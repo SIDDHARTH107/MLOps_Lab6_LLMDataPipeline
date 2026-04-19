@@ -1,16 +1,16 @@
-# Fintech App Review — LLM Data Pipeline
+# Fintech App Review - LLM Data Pipeline
 
 ## Problem Statement
 US fintech apps (Robinhood, Cash App, Venmo, Chime, etc.) receive thousands of user reviews daily. To train an LLM that can automatically classify reviews, extract feature requests, and detect sentiment, we need a scalable data pipeline that can process millions of reviews efficiently.
 
 This project demonstrates three progressively complex approaches to building an LLM data pipeline for fintech app review text:
 
-1. **In-Memory Pipeline** — Load all data into RAM, tokenize, chunk, and batch.
-2. **Streaming Pipeline** — Process data without loading it all into memory using a rolling buffer.
-3. **Multi-Process Streaming Pipeline** — Shard the data stream across multiple CPU workers for parallel processing.
+1. **In-Memory Pipeline** - Load all data into RAM, tokenize, chunk, and batch.
+2. **Streaming Pipeline** - Process data without loading it all into memory using a rolling buffer.
+3. **Multi-Process Streaming Pipeline** - Shard the data stream across multiple CPU workers for parallel processing.
 
 ## Dataset
-- **`sealuzh/app_reviews`** from HuggingFace — Google Play app reviews with star ratings and review text.
+- **`sealuzh/app_reviews`** from HuggingFace - Google Play app reviews with star ratings and review text.
 
 ## Files
 
